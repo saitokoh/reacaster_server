@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コメント投稿</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/script.js"></script>
+</head>
+<body>
+  <header>
+    ReaCaster
+  </header>
+  <div class="main">
+    <h1>コメントを投稿すると画面に流れます！</h1>
+    <input id="comment" type="text" value="" placeholder="コメント"/>
+    <button id="postButton" type="button">投稿する</button>
+  </div>
+  <div id="loadingWrap" style="display: none;">
+    <div id="loading"></div>
+  </div>
+  <div id="success">
+    投稿に成功しました！
+  </div>
+  <div id="error">
+    投稿に失敗しました
+  </div>
+</body>
+</html>
