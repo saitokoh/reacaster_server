@@ -12,6 +12,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+io.set('resource', `/${process.env.SOCKET_PATH}`);
 io.sockets.on('connection', function (socket) {
 });
 
