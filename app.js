@@ -35,7 +35,7 @@ app.post('/slack', async function (req, res) {
 });
 
 app.post('/comment', async function (req, res) {
-  if (req.body.comment.length > 256) {
+  if (req.body.comment.length > 100) {
     res.status(404).json();
     return;
   }

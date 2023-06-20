@@ -23,6 +23,8 @@ postButton.addEventListener('click', () => {
     if (res.ok) {
       comment.value = ''
       fadeInOutAnime(successDiv)
+    } else {
+      fadeInOutAnime(errorDiv)  
     }
   }).catch(error => {
     console.log(error)
