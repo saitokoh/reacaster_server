@@ -20,7 +20,7 @@ postButton.addEventListener('click', () => {
       comment: comment.value
     })
   }).then(res => {
-    if (res.ok) {
+    if (res.status === 200 || res.status === 204) {
       comment.value = ''
       fadeInOutAnime(successDiv)
     } else {
